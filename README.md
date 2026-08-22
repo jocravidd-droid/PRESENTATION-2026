@@ -7,24 +7,59 @@
 
 Je suis passionné par les systèmes numériques et j'apprends tout en autodidacte. Jusqu'à présent, je n'avais pas vraiment eu le temps d'approfondir sérieusement des sujets comme la cybersécurité ou le matériel.
 
-Aujourd'hui, je prends le temps de structurer mon apprentissage pour acquérir des bases solides. Mon objectif final est de me diriger vers l'une de ces deux voies : **la cybersécurité offensive (Red Team)** OU **la robotique**.
+Aujourd'hui, je prends le temps de structurer mon apprentissage pour acquérir des bases solides, brique par brique, plutôt que de sauter les étapes. Mon objectif final est de me diriger vers l'une de ces deux voies :
+
+- 🛡️ **La cybersécurité offensive (Red Team)** — comprendre les systèmes assez profondément pour les attaquer et les défendre
+- 🤖 **La robotique** — construire mes propres machines, du circuit électronique au code qui les fait bouger
 
 ---
 
-### 🚀 Ma feuille de route
+### 🐍 Où j'en suis en Python
 
-| Étape | Statut | Cible | Détails de l'apprentissage |
-| :--- | :---: | :--- | :--- |
-| **1. Python 🐍** | 🟢 *En cours* | **Développement** | Finir FreeCodeCamp, combler les trous, écrire des scripts seul, puis valider mes bases avec le défi **[Make-A-Lisp](https://github.com/kanaka/mal)** : écrire un interpréteur Lisp en Python, de zéro. |
-| **2. TryHackMe 🛡️** | ⚪ *À venir* | **Voie Cyber** | Une fois Python (et le défi mal) terminés : mettre le code en pause pour poser des bases solides en réseaux et systèmes, orientées Red Team. |
-| **3. Langages 💻** | ⚪ *À venir* | **Programmation** | HTML → CSS → SQL → JavaScript → Backend → C# → C → C++ → Assembly, chacun poussé jusqu'à un niveau solide avant de passer au suivant. |
-| **4. Reverse Engineering 🔍** | ⚪ *À venir* | **Voie Cyber** | Après l'Assembly x86-64 : comprendre le fonctionnement des malwares pour mieux les analyser (pas les écrire), puis Rust. |
+Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite. Au programme jusqu'ici :
+
+- **Structures de données** : Big O, tableaux statiques/dynamiques, Stack (LIFO), Queue (FIFO), Singly & Doubly Linked Lists, Hash Tables (implémentées à la main, gestion des collisions)
+- **Algorithmes** : linear & binary search, merge sort, quicksort, selection sort, bisection method, l'algorithme de Luhn, Tower of Hanoi (récursif)
+- **Graphes & arbres** : BFS, DFS (récursif), adjacency list / adjacency matrix, et j'attaque maintenant la **dynamic programming** (memoization, tabulation)
+
+#### 🧩 Le défi Make-A-Lisp
+
+Pour valider mes bases une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et en Python, un interpréteur Lisp complet, en 11 étapes progressives — READ/EVAL/PRINT, environnements, closures, tail-call optimization, quoting, macros, gestion d'erreurs, jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
+
+**Où j'en suis :** step3 (environnements — `let*`, `def!`, portée locale/globale, shadowing) ✅ en bonne voie.
+
+---
+
+### 🗺️ Ma feuille de route complète
+
+| # | Étape | Statut | Détails |
+| :-: | :--- | :---: | :--- |
+| 1 | **Python + mal** 🐍 | 🟢 En cours | Terminer FreeCodeCamp, combler les trous du langage, écrire des scripts seul, puis valider le tout avec le défi mal |
+| 2 | **TryHackMe** 🛡️ | ⚪ À venir | Bases réseaux & systèmes orientées Red Team, une fois Python et mal terminés |
+| 3 | **HTML → CSS → SQL** 🌐 | ⚪ À venir | Les fondations du web et des bases de données |
+| 4 | **JavaScript + Backend** ⚙️ | ⚪ À venir | Rendre une page interactive, puis attaquer la logique côté serveur |
+| 5 | **C# → C → C++** 🧠 | ⚪ À venir | Du langage managé vers le bas niveau, dans l'ordre de difficulté |
+| 6 | **Assembly x86-64** ⚙️ | ⚪ À venir | Comprendre ce qui tourne réellement sous le capot |
+| 7 | **Reverse Engineering** 🔍 | ⚪ À venir | Analyser le fonctionnement des malwares (comprendre, pas produire) |
+| 8 | **Rust** 🦀 | ⚪ À venir | Dernier langage du parcours |
+
+Chaque langage est poussé jusqu'à un niveau solide, avec révision complète, avant de passer au suivant — pas d'avancée précipitée.
 
 ---
 
 ### ⚡ En parallèle : l'électronique
 
-Pendant que j'avance sur l'informatique, je monte aussi mon propre établi et j'apprends l'électronique à côté — kit Elegoo Mega, montages sur breadboard, lecture de schémas. L'objectif à terme : construire mes propres projets robotiques en totale autonomie, code compris.
+Pendant que j'avance sur l'informatique, je monte aussi mon propre établi et j'apprends l'électronique de mon côté :
+
+- Kit **Elegoo Mega**, montages sur breadboard, lecture de schémas, mesures au multimètre
+- Objectif : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes — drone, bras articulés
+
+---
+
+### 🛠️ Projets
+
+- **ElectronicsCamp** — une plateforme d'apprentissage électronique/Arduino/ESP32/robotique que je construis moi-même, à budget zéro, actuellement en v0.1
+- **NULLSEC FRANCE** — un collectif/marque autour de la cybersécurité offensive, identité visuelle et contenus en cours de création
 
 ---
 
