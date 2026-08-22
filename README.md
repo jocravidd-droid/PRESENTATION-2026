@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>👋 Bonjour, bienvenue sur mon profil !</h1>
-  <p><b>Autodidacte | Passionné d'informatique & de robotique 🤖</b></p>
+  <h1>⚡ Ingénieur Fou</h1>
+  <p><b>Autodidacte | En marche vers le Red Team ou la Robotique 🤖</b></p>
 </div>
 
 <br>
@@ -16,15 +16,20 @@ Aujourd'hui, je prends le temps de structurer mon apprentissage pour acquérir d
 
 ### 🐍 Où j'en suis en Python
 
-Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite. Au programme jusqu'ici :
+Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite — **526 des 531 étapes** de la certification Python de freeCodeCamp sont terminées.
+
+Au programme, déjà acquis :
 
 - **Structures de données** : Big O, tableaux statiques/dynamiques, Stack (LIFO), Queue (FIFO), Singly & Doubly Linked Lists, Hash Tables (implémentées à la main, gestion des collisions)
 - **Algorithmes** : linear & binary search, merge sort, quicksort, selection sort, bisection method, l'algorithme de Luhn, Tower of Hanoi (récursif)
-- **Graphes & arbres** : BFS, DFS (récursif), adjacency list / adjacency matrix, et j'attaque maintenant la **dynamic programming** (memoization, tabulation)
+- **Graphes & arbres** : BFS, DFS (récursif), N-Queens, adjacency list / adjacency matrix
+- **POO** : classes, encapsulation, héritage, polymorphisme, abstraction
+
+Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification.
 
 #### 🧩 Le défi Make-A-Lisp
 
-Pour valider mes bases une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et en Python, un interpréteur Lisp complet, en 11 étapes progressives — READ/EVAL/PRINT, environnements, closures, tail-call optimization, quoting, macros, gestion d'erreurs, jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
+Pour valider mes bases une bonne fois pour toutes, je me suis aussi lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et en Python, un interpréteur Lisp complet, en 11 étapes progressives — READ/EVAL/PRINT, environnements, closures, tail-call optimization, quoting, macros, gestion d'erreurs, jusqu'à un interpréteur capable de s'auto-héberger.
 
 **Où j'en suis :** step3 (environnements — `let*`, `def!`, portée locale/globale, shadowing) ✅ en bonne voie.
 
@@ -34,8 +39,8 @@ Pour valider mes bases une bonne fois pour toutes, je me suis lancé dans **[Mak
 
 | # | Étape | Statut | Détails |
 | :-: | :--- | :---: | :--- |
-| 1 | **Python + mal** 🐍 | 🟢 En cours | Terminer FreeCodeCamp, combler les trous du langage, écrire des scripts seul, puis valider le tout avec le défi mal |
-| 2 | **TryHackMe** 🛡️ | ⚪ À venir | Bases réseaux & systèmes orientées Red Team, une fois Python et mal terminés |
+| 1 | **Python + mal** 🐍 | 🟢 Presque terminé | Dynamic Programming, révision, examen, puis le défi mal |
+| 2 | **TryHackMe** 🛡️ | ⚪ À venir | Bases réseaux & systèmes orientées Red Team |
 | 3 | **HTML → CSS → SQL** 🌐 | ⚪ À venir | Les fondations du web et des bases de données |
 | 4 | **JavaScript + Backend** ⚙️ | ⚪ À venir | Rendre une page interactive, puis attaquer la logique côté serveur |
 | 5 | **C# → C → C++** 🧠 | ⚪ À venir | Du langage managé vers le bas niveau, dans l'ordre de difficulté |
@@ -53,13 +58,6 @@ Pendant que j'avance sur l'informatique, je monte aussi mon propre établi et j'
 
 - Kit **Elegoo Mega**, montages sur breadboard, lecture de schémas, mesures au multimètre
 - Objectif : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes — drone, bras articulés
-
----
-
-### 🛠️ Projets
-
-- **ElectronicsCamp** — une plateforme d'apprentissage électronique/Arduino/ESP32/robotique que je construis moi-même, à budget zéro, actuellement en v0.1
-- **NULLSEC FRANCE** — un collectif/marque autour de la cybersécurité offensive, identité visuelle et contenus en cours de création
 
 ---
 
