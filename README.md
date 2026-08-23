@@ -126,8 +126,6 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 <div align="center">
 
-![Stats GitHub](https://github-readme-stats.vercel.app/api?username=jocravidd-droid&show_icons=true&theme=default&hide_border=true)
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=jocravidd-droid&layout=compact&hide_border=true)
 ![Streak](https://streak-stats.demolab.com/?user=jocravidd-droid&hide_border=true)
 
 </div>
