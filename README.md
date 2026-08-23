@@ -30,7 +30,9 @@
 
 ---
 
-## 👋 Qui je suis
+## 🪪 Présentation
+
+### 👋 Qui je suis
 
 Je suis passionné par les systèmes numériques et j'apprends tout en autodidacte. Jusqu'à présent, je n'avais pas vraiment eu le temps d'approfondir sérieusement des sujets comme la cybersécurité ou le matériel — entre le lycée et le reste, ça restait en projet.
 
@@ -38,12 +40,7 @@ Aujourd'hui, j'ai décidé de prendre les choses en main et de structurer série
 
 Ce dépôt sert de vitrine à ce parcours : où j'en suis, où je vais, et comment j'apprends.
 
-
-[⬆️ Retour en haut](#-sommaire)
-
----
-
-## 🎯 Mes objectifs
+### 🎯 Mes objectifs
 
 Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps possible avant de trancher :
 
@@ -52,14 +49,15 @@ Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps
 
 Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physique), donc je n'ai pas besoin de choisir tout de suite — je construis les fondations qui serviront dans les deux cas.
 
-
 [⬆️ Retour en haut](#-sommaire)
 
 ---
 
-## 📍 Où j'en suis
+## 🚀 Parcours
 
-### 🐍 Python — 526 / 531 étapes FCC
+### 📍 Où j'en suis
+
+**🐍 Python — 526 / 531 étapes FCC**
 
 Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite plutôt que de le considérer "acquis" trop vite. Je suis actuellement sur la certification Python de freeCodeCamp, où j'ai déjà validé :
 
@@ -70,7 +68,7 @@ Python est mon premier langage, et je le pousse volontairement à fond avant de 
 
 Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification. Une fois ça bouclé, je comble les trous que le cours ne couvre pas (fichiers, regex, modules, décorateurs...) avant d'écrire des scripts complets seul, sans modèle.
 
-### 🧩 Make-A-Lisp — step4 en cours
+**🧩 Make-A-Lisp — step4 en cours**
 
 Pour valider mes bases Python une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et de zéro, un interpréteur Lisp complet en Python, en 11 étapes progressives — du simple READ/EVAL/PRINT jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
 
@@ -82,16 +80,11 @@ Chaque étape est écrite entièrement par moi-même — pas de squelette de cod
 
 Objectif : un parcours mal présentable d'ici fin août.
 
-### ⚡ Électronique — en parallèle
+**⚡ Électronique — en parallèle**
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
 
-
-[⬆️ Retour en haut](#-sommaire)
-
----
-
-## 🗺️ Feuille de route complète
+### 🗺️ Feuille de route complète
 
 Toute la suite du parcours est planifiée à l'avance, domaine par domaine — je ne saute pas d'un sujet à l'autre, je termine un bloc entier (avec révision) avant de passer au suivant.
 
@@ -99,12 +92,7 @@ Toute la suite du parcours est planifiée à l'avance, domaine par domaine — j
 
 *Le détail complet des blocs maths et physique-chimie (contenu précis, niveau de départ) est disponible [dans ce fichier séparé](./planning-detaille.svg).*
 
-
-[⬆️ Retour en haut](#-sommaire)
-
----
-
-## 🧠 Ma méthode de travail
+### 🧠 Ma méthode de travail
 
 Quelques principes que je m'impose, tirés de l'expérience :
 
@@ -114,12 +102,13 @@ Quelques principes que je m'impose, tirés de l'expérience :
 - **Révision systématique.** Chaque gros bloc terminé est suivi d'une révision complète avant de passer au suivant, pour que ça reste acquis sur la durée.
 - **Un langage avant le suivant.** Je pousse chaque langage jusqu'à un niveau solide, pas juste "je l'ai survolé", avant de passer au suivant de la liste.
 
-
 [⬆️ Retour en haut](#-sommaire)
 
 ---
 
-## 🛠️ Stack technique
+## 🛠️ Technique
+
+### 🛠️ Stack technique
 
 <div align="center">
 
@@ -132,12 +121,7 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 </div>
 
-
-[⬆️ Retour en haut](#-sommaire)
-
----
-
-## 📊 Statistiques GitHub
+### 📊 Statistiques GitHub
 
 <div align="center">
 
@@ -147,11 +131,12 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 </div>
 
-
 [⬆️ Retour en haut](#-sommaire)
 
 ---
 
-## 🌱 Ma philosophie
+## 🌱 Pour finir
+
+### 🌱 Ma philosophie
 
 > *Prendre le temps de bien faire les choses. Mieux vaut des bases solides qu'un apprentissage précipité !*
