@@ -113,7 +113,7 @@ Chaque étape est écrite entièrement par moi-même — pas de squelette de cod
 
 Objectif : un parcours mal présentable d'ici fin août.
 
-<br><br>
+<br>
 
 #### ⚡ Électronique — en parallèle
 
