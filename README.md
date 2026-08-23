@@ -103,8 +103,6 @@ Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révisi
 
 Pour valider mes bases Python une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et de zéro, un interpréteur Lisp complet en Python, en 11 étapes progressives — du simple READ/EVAL/PRINT jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
 
-<br>
-
 Chaque étape est écrite entièrement par moi-même — pas de squelette de code, pas de solution copiée. Là où je suis :
 
 - ✅ step0 à step3 : REPL, lecture/écriture, évaluation des opérateurs, environnements (`let*`, `def!`, portée locale/globale, shadowing)
@@ -112,8 +110,6 @@ Chaque étape est écrite entièrement par moi-même — pas de squelette de cod
 - 🔵 step4 en cours : `if`, `fn*` (fonctions utilisateur / closures), `do`
 
 - ⬜ step5 à stepA : tail call optimization, fichiers, quoting, macros, gestion d'erreurs, auto-hébergement
-
-<br>
 
 Objectif : un parcours mal présentable d'ici fin août.
 
