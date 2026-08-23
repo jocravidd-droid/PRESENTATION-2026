@@ -38,7 +38,7 @@ Ce dépôt sert de vitrine à ce parcours : où j'en suis, où je vais, et comme
 Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps possible avant de trancher :
 
 - 🛡️ **Cybersécurité offensive (Red Team)** — comprendre les systèmes assez profondément pour savoir les attaquer, donc aussi savoir les défendre. Ça passe par la maîtrise du bas niveau (C, Assembly), du réseau, et par la pratique sur des plateformes comme TryHackMe.
-- 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. Le kit Elegoo sur mon bureau est le point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
+- 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. Le kit Elegoo en ma possesion est le point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
 
 Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physique), donc je n'ai pas besoin de choisir tout de suite — je construis les fondations qui serviront dans les deux cas.
 
