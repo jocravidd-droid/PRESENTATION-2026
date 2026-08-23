@@ -38,7 +38,7 @@ Ce dépôt sert de vitrine à ce parcours : où j'en suis, où je vais, et comme
 Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps possible avant de trancher :
 
 - 🛡️ **Cybersécurité offensive (Red Team)** — comprendre les systèmes assez profondément pour savoir les attaquer, donc aussi savoir les défendre. Ça passe par la maîtrise du bas niveau (C, Assembly), du réseau, et par la pratique sur des plateformes comme TryHackMe.
-- 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. Le kit Elegoo en ma possesion est le point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
+- 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. Le kit Elegoo sur mon bureau est le point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
 
 Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physique), donc je n'ai pas besoin de choisir tout de suite — je construis les fondations qui serviront dans les deux cas.
 
@@ -116,9 +116,9 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 <div align="center">
 
-![Stats GitHub](https://github-readme-stats.vercel.app/api?username=jocravidd-droid&show_icons=true&theme=default&hide_border=true)
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=jocravidd-droid&layout=compact&hide_border=true)
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=jocravidd-droid&hide_border=true)
+![Stats GitHub](https://github-readme-stats.vercel.app/api?username=TON-USERNAME-GITHUB&show_icons=true&theme=default&hide_border=true)
+![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=TON-USERNAME-GITHUB&layout=compact&hide_border=true)
+![Streak](https://streak-stats.demolab.com/?user=TON-USERNAME-GITHUB&hide_border=true)
 
 </div>
 
