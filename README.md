@@ -83,10 +83,6 @@ Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physi
 
 <br>
 
-## 🚀 Parcours
-
-<br>
-
 ### 📍 Où j'en suis
 
 <br>
