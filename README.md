@@ -89,11 +89,7 @@ Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physi
 
 #### 🐍 Python — 526 / 531 étapes FCC
 
-<br>
-
 Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite plutôt que de le considérer "acquis" trop vite. Je suis actuellement sur la certification Python de freeCodeCamp, où j'ai déjà validé :
-
-<br>
 
 - **Structures de données** : Big O, tableaux statiques/dynamiques, Stack (LIFO), Queue (FIFO), Singly & Doubly Linked Lists, Hash Tables (implémentées à la main, gestion des collisions)
 
@@ -103,22 +99,17 @@ Python est mon premier langage, et je le pousse volontairement à fond avant de 
 
 - **Programmation orientée objet** : classes, encapsulation, héritage, polymorphisme, abstraction
 
-<br>
-
 Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification. Une fois ça bouclé, je comble les trous que le cours ne couvre pas (fichiers, regex, modules, décorateurs...) avant d'écrire des scripts complets seul, sans modèle.
 
 <br><br>
 
 #### 🧩 Make-A-Lisp — step4 en cours
 
-<br>
-
 Pour valider mes bases Python une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et de zéro, un interpréteur Lisp complet en Python, en 11 étapes progressives — du simple READ/EVAL/PRINT jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
 
 <br>
 
 Chaque étape est écrite entièrement par moi-même — pas de squelette de code, pas de solution copiée. Là où je suis :
-
 
 - ✅ step0 à step3 : REPL, lecture/écriture, évaluation des opérateurs, environnements (`let*`, `def!`, portée locale/globale, shadowing)
 
@@ -133,8 +124,6 @@ Objectif : un parcours mal présentable d'ici fin août.
 <br><br>
 
 #### ⚡ Électronique — en parallèle
-
-<br>
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
 
