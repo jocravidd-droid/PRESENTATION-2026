@@ -37,7 +37,7 @@ Je suis passionné par les systèmes numériques et j'apprends tout en autodidac
 
 Aujourd'hui, j'ai décidé de prendre les choses en main et de structurer sérieusement mon apprentissage. Pas question de brûler les étapes ou de survoler les bases pour aller vite : je préfère avancer plus lentement mais construire quelque chose de solide, quitte à revenir en arrière sur un point mal compris plutôt que de faire semblant de l'avoir acquis.
 
-Ce dépôt sert de vitrine à ce parcours : où j'en suis, où je vais, et comment j'apprends.
+Ce dépôt fonctionne comme une fenêtre ouverte sur mon parcours : je le mets à jour au fil de l'eau, ce n'est pas une présentation figée mais un reflet en continu de où j'en suis, où je vais, et comment j'apprends.
 
 ### 🎯 Mes objectifs
 
@@ -50,8 +50,9 @@ Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physi
 
 ---
 
-### 📍 Où j'en suis
+## 🚀 Parcours
 
+### 📍 Où j'en suis
 
 #### 🐍 Python — 526 / 531 étapes FCC
 
@@ -63,8 +64,6 @@ Python est mon premier langage, et je le pousse volontairement à fond avant de 
 - **Programmation orientée objet** : classes, encapsulation, héritage, polymorphisme, abstraction
 
 Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification. Une fois ça bouclé, je comble les trous que le cours ne couvre pas (fichiers, regex, modules, décorateurs...) avant d'écrire des scripts complets seul, sans modèle.
-
----
 
 #### 🧩 Make-A-Lisp — step4 en cours
 
@@ -78,15 +77,9 @@ Chaque étape est écrite entièrement par moi-même — pas de squelette de cod
 
 Objectif : un parcours mal présentable d'ici fin août.
 
----
-
 #### ⚡ Électronique — en parallèle
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
-
-
----
-
 
 ### 🗺️ Feuille de route complète
 
