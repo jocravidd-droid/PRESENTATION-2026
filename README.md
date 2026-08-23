@@ -137,11 +137,7 @@ Toute la suite du parcours est planifiée à l'avance, domaine par domaine — j
 
 ### 🧠 Ma méthode de travail
 
-<br>
-
 Quelques principes que je m'impose, tirés de l'expérience :
-
-<br>
 
 - **Un domaine à la fois.** Pas d'alternance entre Python, maths et électronique dans la même semaine — je termine un bloc complet avant de changer de sujet, révision comprise.
 
