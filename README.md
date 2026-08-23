@@ -119,7 +119,7 @@ Objectif : un parcours mal présentable d'ici fin août.
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
 
-<br><br>
+<br>
 
 ### 🗺️ Feuille de route complète
 
