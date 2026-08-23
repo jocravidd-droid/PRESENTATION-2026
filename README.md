@@ -14,50 +14,48 @@ Aujourd'hui, je prends le temps de structurer mon apprentissage pour acquérir d
 
 ---
 
-### 🐍 Où j'en suis en Python
+### 📍 Où j'en suis
 
-Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite — **526 des 531 étapes** de la certification Python de freeCodeCamp sont terminées.
-
-Au programme, déjà acquis :
-
-- **Structures de données** : Big O, tableaux statiques/dynamiques, Stack (LIFO), Queue (FIFO), Singly & Doubly Linked Lists, Hash Tables (implémentées à la main, gestion des collisions)
-- **Algorithmes** : linear & binary search, merge sort, quicksort, selection sort, bisection method, l'algorithme de Luhn, Tower of Hanoi (récursif)
-- **Graphes & arbres** : BFS, DFS (récursif), N-Queens, adjacency list / adjacency matrix
-- **POO** : classes, encapsulation, héritage, polymorphisme, abstraction
-
-Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification.
-
-#### 🧩 Le défi Make-A-Lisp
-
-Pour valider mes bases une bonne fois pour toutes, je me suis aussi lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et en Python, un interpréteur Lisp complet, en 11 étapes progressives — READ/EVAL/PRINT, environnements, closures, tail-call optimization, quoting, macros, gestion d'erreurs, jusqu'à un interpréteur capable de s'auto-héberger.
-
-**Où j'en suis :** step3 (environnements — `let*`, `def!`, portée locale/globale, shadowing) ✅ en bonne voie.
+- **Python (FCC)** : 526 des 531 étapes terminées — reste Dynamic Programming, la révision et l'examen
+- **Make-A-Lisp** : interpréteur Lisp écrit de zéro en Python, actuellement sur l'étape 4 (`fn*`, closures)
+- **Électronique** : kit Elegoo Mega, montages sur breadboard, en parallèle
 
 ---
 
-### 🗺️ Ma feuille de route complète
+### 🗺️ Feuille de route complète
 
-| # | Étape | Statut | Détails |
-| :-: | :--- | :---: | :--- |
-| 1 | **Python + mal** 🐍 | 🟢 Presque terminé | Dynamic Programming, révision, examen, puis le défi mal |
-| 2 | **TryHackMe** 🛡️ | ⚪ À venir | Bases réseaux & systèmes orientées Red Team |
-| 3 | **HTML → CSS → SQL** 🌐 | ⚪ À venir | Les fondations du web et des bases de données |
-| 4 | **JavaScript + Backend** ⚙️ | ⚪ À venir | Rendre une page interactive, puis attaquer la logique côté serveur |
-| 5 | **C# → C → C++** 🧠 | ⚪ À venir | Du langage managé vers le bas niveau, dans l'ordre de difficulté |
-| 6 | **Assembly x86-64** ⚙️ | ⚪ À venir | Comprendre ce qui tourne réellement sous le capot |
-| 7 | **Reverse Engineering** 🔍 | ⚪ À venir | Analyser le fonctionnement des malwares (comprendre, pas produire) |
-| 8 | **Rust** 🦀 | ⚪ À venir | Dernier langage du parcours |
+```mermaid
+flowchart TD
+    A["🟡 Python + FCC<br/>526/531 étapes"] --> B["⚪ Combler les trous Python<br/>(fichiers, regex, modules...)"]
+    B --> C["⚪ Écrire des scripts<br/>Python from scratch"]
+    C --> D["🔵 Make-A-Lisp<br/>interpréteur Lisp en Python"]
+    D --> E["⚪ TryHackMe<br/>réseaux & systèmes"]
+    E --> F["⚪ HTML"]
+    F --> G["⚪ CSS"]
+    G --> H["⚪ SQL"]
+    H --> I["⚪ JavaScript"]
+    I --> J["⚪ Backend"]
+    J --> K["⚪ C#"]
+    K --> L["⚪ C"]
+    L --> M["⚪ C++"]
+    M --> N["⚪ Assembly x86-64"]
+    N --> O["⚪ Reverse Engineering"]
+    O --> P["⚪ Rust"]
+
+    A -.en parallèle.-> Q["🟡 Électronique<br/>Elegoo, breadboard"]
+    Q -.-> R["⚪ Maths & Physique<br/>appliqués"]
+    R -.-> S["⚪ Robotique<br/>drone, bras articulés"]
+
+    classDef paused fill:#f1c40f,color:#000,stroke:#f39c12,stroke-width:2px
+    classDef current fill:#3498db,color:#fff,stroke:#2980b9,stroke-width:2px
+    classDef todo fill:#7f8c8d,color:#fff,stroke:#555,stroke-width:1px
+
+    class A,Q paused
+    class D current
+    class B,C,E,F,G,H,I,J,K,L,M,N,O,P,R,S todo
+```
 
 Chaque langage est poussé jusqu'à un niveau solide, avec révision complète, avant de passer au suivant — pas d'avancée précipitée.
-
----
-
-### ⚡ En parallèle : l'électronique
-
-Pendant que j'avance sur l'informatique, je monte aussi mon propre établi et j'apprends l'électronique de mon côté :
-
-- Kit **Elegoo Mega**, montages sur breadboard, lecture de schémas, mesures au multimètre
-- Objectif : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes — drone, bras articulés
 
 ---
 
