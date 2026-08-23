@@ -4,7 +4,7 @@
 
 ### Autodidacte | En marche vers le Red Team ou la Robotique 🤖
 
-![Profile Views](https://komarev.com/ghpvc/?username=TON-USERNAME-GITHUB&color=555555&style=flat)
+![Profile Views](https://komarev.com/ghpvc/?username=jocravidd-droid&color=555555&style=flat)
 
 </div>
 
@@ -116,9 +116,9 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 <div align="center">
 
-![Stats GitHub](https://github-readme-stats.vercel.app/api?username=TON-USERNAME-GITHUB&show_icons=true&theme=default&hide_border=true)
-![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=TON-USERNAME-GITHUB&layout=compact&hide_border=true)
-![Streak](https://streak-stats.demolab.com/?user=TON-USERNAME-GITHUB&hide_border=true)
+![Stats GitHub](https://github-readme-stats.vercel.app/api?username=jocravidd-droid&show_icons=true&theme=default&hide_border=true)
+![Langages les plus utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=jocravidd-droid&layout=compact&hide_border=true)
+![Streak](https://streak-stats.demolab.com/?user=jocravidd-droid&hide_border=true)
 
 </div>
 
