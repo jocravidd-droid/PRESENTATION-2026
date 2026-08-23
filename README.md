@@ -57,7 +57,7 @@ Aujourd'hui, j'ai décidé de prendre les choses en main et de structurer série
 
 <br>
 
-Ce dépôt fonctionne comme une fenêtre ouverte sur mon parcours : je le mets à jour au fil de l'eau, ce n'est pas une présentation figée mais un reflet en continu de où j'en suis, où je vais, et comment j'apprends.
+Ce compte fonctionne comme une fenêtre ouverte sur mon parcours : je le mets à jour au fil de l'eau, ce n'est pas une présentation figée mais un reflet en continu de où j'en suis, où je vais, et comment j'apprends.
 
 <br><br>
 
