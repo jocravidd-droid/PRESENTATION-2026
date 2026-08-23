@@ -64,7 +64,7 @@ Python est mon premier langage, et je le pousse volontairement à fond avant de 
 
 Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification. Une fois ça bouclé, je comble les trous que le cours ne couvre pas (fichiers, regex, modules, décorateurs...) avant d'écrire des scripts complets seul, sans modèle.
 
-
+---
 
 #### 🧩 Make-A-Lisp — step4 en cours
 
@@ -78,13 +78,14 @@ Chaque étape est écrite entièrement par moi-même — pas de squelette de cod
 
 Objectif : un parcours mal présentable d'ici fin août.
 
-
+---
 
 #### ⚡ Électronique — en parallèle
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
 
 
+---
 
 
 ### 🗺️ Feuille de route complète
