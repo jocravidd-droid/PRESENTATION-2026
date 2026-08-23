@@ -12,13 +12,20 @@
 
 ## 📑 Sommaire
 
+**Présentation**
 - [Qui je suis](#-qui-je-suis)
 - [Mes objectifs](#-mes-objectifs)
+
+**Parcours**
 - [Où j'en suis](#-où-jen-suis)
 - [Feuille de route complète](#️-feuille-de-route-complète)
 - [Ma méthode de travail](#-ma-méthode-de-travail)
+
+**Technique**
 - [Stack technique](#️-stack-technique)
 - [Statistiques GitHub](#-statistiques-github)
+
+**Pour finir**
 - [Ma philosophie](#-ma-philosophie)
 
 ---
@@ -31,6 +38,9 @@ Aujourd'hui, j'ai décidé de prendre les choses en main et de structurer série
 
 Ce dépôt sert de vitrine à ce parcours : où j'en suis, où je vais, et comment j'apprends.
 
+
+[⬆️ Retour en haut](#-sommaire)
+
 ---
 
 ## 🎯 Mes objectifs
@@ -41,6 +51,9 @@ Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps
 - 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. J'ai un kit Elegoo comme point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
 
 Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physique), donc je n'ai pas besoin de choisir tout de suite — je construis les fondations qui serviront dans les deux cas.
+
+
+[⬆️ Retour en haut](#-sommaire)
 
 ---
 
@@ -73,6 +86,9 @@ Objectif : un parcours mal présentable d'ici fin août.
 
 Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
 
+
+[⬆️ Retour en haut](#-sommaire)
+
 ---
 
 ## 🗺️ Feuille de route complète
@@ -82,6 +98,9 @@ Toute la suite du parcours est planifiée à l'avance, domaine par domaine — j
 ![Feuille de route](./planning-resume.svg)
 
 *Le détail complet des blocs maths et physique-chimie (contenu précis, niveau de départ) est disponible [dans ce fichier séparé](./planning-detaille.svg).*
+
+
+[⬆️ Retour en haut](#-sommaire)
 
 ---
 
@@ -94,6 +113,9 @@ Quelques principes que je m'impose, tirés de l'expérience :
 - **Pas de raccourcis.** Un exercice résolu avec de l'aide extérieure sans être compris ne compte pas comme acquis — je préfère être bloqué plus longtemps mais m'en sortir réellement seul.
 - **Révision systématique.** Chaque gros bloc terminé est suivi d'une révision complète avant de passer au suivant, pour que ça reste acquis sur la durée.
 - **Un langage avant le suivant.** Je pousse chaque langage jusqu'à un niveau solide, pas juste "je l'ai survolé", avant de passer au suivant de la liste.
+
+
+[⬆️ Retour en haut](#-sommaire)
 
 ---
 
@@ -110,6 +132,9 @@ Quelques principes que je m'impose, tirés de l'expérience :
 
 </div>
 
+
+[⬆️ Retour en haut](#-sommaire)
+
 ---
 
 ## 📊 Statistiques GitHub
@@ -121,6 +146,9 @@ Quelques principes que je m'impose, tirés de l'expérience :
 ![Streak](https://streak-stats.demolab.com/?user=jocravidd-droid&hide_border=true)
 
 </div>
+
+
+[⬆️ Retour en haut](#-sommaire)
 
 ---
 
