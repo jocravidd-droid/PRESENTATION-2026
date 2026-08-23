@@ -119,7 +119,6 @@ Pour valider mes bases Python une bonne fois pour toutes, je me suis lancé dans
 
 Chaque étape est écrite entièrement par moi-même — pas de squelette de code, pas de solution copiée. Là où je suis :
 
-<br>
 
 - ✅ step0 à step3 : REPL, lecture/écriture, évaluation des opérateurs, environnements (`let*`, `def!`, portée locale/globale, shadowing)
 
