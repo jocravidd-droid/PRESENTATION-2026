@@ -123,8 +123,6 @@ Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en par
 
 ### 🗺️ Feuille de route complète
 
-<br>
-
 Toute la suite du parcours est planifiée à l'avance, domaine par domaine — je ne saute pas d'un sujet à l'autre, je termine un bloc entier (avec révision) avant de passer au suivant.
 
 <br>
