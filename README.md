@@ -1,199 +1,252 @@
-<div align="center">
+# MAL — Make A Lisp in Python
 
-# ⚡ Ingénieur Fou
-
-### Autodidacte | En marche vers le Red Team ou la Robotique 🤖
-
-![Profile Views](https://komarev.com/ghpvc/?username=jocravidd-droid&color=555555&style=flat)
-
-</div>
-
-<br><br>
-
-## 📑 Sommaire
-
-<br>
-
-**Présentation**
-- [Qui je suis](#-qui-je-suis)
-- [Mes objectifs](#-mes-objectifs)
-
-<br>
-
-**Parcours**
-- [Où j'en suis](#-où-jen-suis)
-- [Feuille de route complète](#️-feuille-de-route-complète)
-- [Ma méthode de travail](#-ma-méthode-de-travail)
-
-<br>
-
-**Technique**
-- [Stack technique](#️-stack-technique)
-- [Statistiques GitHub](#-statistiques-github)
-
-<br>
-
-- [Ma philosophie](#-ma-philosophie)
-
-<br>
+A minimal Lisp interpreter written in Python. It reads an S-expression typed by the user, parses it into a nested Python list, evaluates it, and prints the result — the classic READ / EVAL / PRINT loop.
 
 ---
 
-<br>
+## Project layout
 
-## 🪪 Présentation
+| File | Role |
+|------|------|
+| `mal.py` | Interpreter: tokenizer, parser, evaluator, REPL |
+| `tools.py` | Arithmetic and comparison functions used by the evaluator |
 
-<br>
-
-### 👋 Qui je suis
-
-<br>
-
-Je suis passionné par les systèmes numériques et j'apprends tout en autodidacte. Jusqu'à présent, je n'avais pas vraiment eu le temps d'approfondir sérieusement des sujets comme la cybersécurité ou le matériel — entre le lycée et le reste, ça restait en projet.
-
-<br>
-
-Aujourd'hui, j'ai décidé de prendre les choses en main et de structurer sérieusement mon apprentissage. Pas question de brûler les étapes ou de survoler les bases pour aller vite : je préfère avancer plus lentement mais construire quelque chose de solide, quitte à revenir en arrière sur un point mal compris plutôt que de faire semblant de l'avoir acquis.
-
-<br>
-
-Ce compte fonctionne comme une fenêtre ouverte sur mon parcours : je le mets à jour au fil de l'eau, ce n'est pas une présentation figée mais un reflet en continu de où j'en suis, où je vais, et comment j'apprends.
-
-<br>
-
-### 🎯 Mes objectifs
-
-<br>
-
-Je vise l'une de ces deux voies, et je garde les deux ouvertes le plus longtemps possible avant de trancher :
-
-- 🛡️ **Cybersécurité offensive (Red Team)** — comprendre les systèmes assez profondément pour savoir les attaquer, donc aussi savoir les défendre. Ça passe par la maîtrise du bas niveau (C, Assembly), du réseau, et par la pratique sur des plateformes comme TryHackMe.
-
-- 🤖 **Robotique** — construire mes propres machines de bout en bout : le circuit électronique, l'électronique de puissance, et le code qui pilote tout ça. J'ai un kit Elegoo comme point de départ, l'objectif est d'aller vers des projets bien plus ambitieux.
-
-Les deux voies partagent un tronc commun (programmation, bas niveau, maths/physique), donc je n'ai pas besoin de choisir tout de suite — je construis les fondations qui serviront dans les deux cas.
-
-<br><br>
+`mal.py` imports `tools`, so both files must sit in the same directory.
 
 ---
 
-<br>
+## Requirements
 
-### 📍 Où j'en suis
-
-<br>
-
-#### 🐍 Python — 526 / 531 étapes FCC
-
-Python est mon premier langage, et je le pousse volontairement à fond avant de passer à la suite plutôt que de le considérer "acquis" trop vite. Je suis actuellement sur la certification Python de freeCodeCamp, où j'ai déjà validé :
-
-- **Structures de données** : Big O, tableaux statiques/dynamiques, Stack (LIFO), Queue (FIFO), Singly & Doubly Linked Lists, Hash Tables (implémentées à la main, gestion des collisions)
-
-- **Algorithmes** : linear & binary search, merge sort, quicksort, selection sort, bisection method, algorithme de Luhn, Tower of Hanoi (récursif)
-
-- **Graphes & arbres** : BFS, DFS (récursif), N-Queens, adjacency list / adjacency matrix
-
-- **Programmation orientée objet** : classes, encapsulation, héritage, polymorphisme, abstraction
-
-Il ne reste que la **Dynamic Programming** (memoization, tabulation), la révision finale, puis l'examen de certification. Une fois ça bouclé, je comble les trous que le cours ne couvre pas (fichiers, regex, modules, décorateurs...) avant d'écrire des scripts complets seul, sans modèle.
-
-<br><br>
-
-#### 🧩 Make-A-Lisp — step4 en cours
-
-Pour valider mes bases Python une bonne fois pour toutes, je me suis lancé dans **[Make-A-Lisp (mal)](https://github.com/kanaka/mal)** : écrire, seul et de zéro, un interpréteur Lisp complet en Python, en 11 étapes progressives — du simple READ/EVAL/PRINT jusqu'à un interpréteur capable de s'auto-héberger (faire tourner sa propre implémentation écrite en mal).
-
-Chaque étape est écrite entièrement par moi-même — pas de squelette de code, pas de solution copiée. Là où je suis :
-
-- ✅ step0 à step3 : REPL, lecture/écriture, évaluation des opérateurs, environnements (`let*`, `def!`, portée locale/globale, shadowing)
-
-- 🔵 step4 en cours : `if`, `fn*` (fonctions utilisateur / closures), `do`
-
-- ⬜ step5 à stepA : tail call optimization, fichiers, quoting, macros, gestion d'erreurs, auto-hébergement
-
-Objectif : un parcours mal présentable d'ici fin août.
-
-<br>
-
-#### ⚡ Électronique — en parallèle
-
-Pendant que j'avance sur l'informatique, j'apprends aussi l'électronique en parallèle avec un kit **Elegoo Mega** : montages sur breadboard, lecture de schémas, mesures au multimètre. L'objectif à terme : coder mes propres montages (au-delà de la simple LED) pour aller vers des projets robotiques autonomes.
-
-<br>
-
-### 🗺️ Feuille de route complète
-
-Toute la suite du parcours est planifiée à l'avance, domaine par domaine — je ne saute pas d'un sujet à l'autre, je termine un bloc entier (avec révision) avant de passer au suivant.
-
-<br>
-
-![Feuille de route](./planning-resume.svg)
-
-<br>
-
-*Le détail complet des blocs maths et physique-chimie (contenu précis, niveau de départ) est disponible [dans ce fichier séparé](./planning-detaille.svg).*
-
-<br><br>
-
-### 🧠 Ma méthode de travail
-
-Quelques principes que je m'impose, tirés de l'expérience :
-
-- **Un domaine à la fois.** Pas d'alternance entre Python, maths et électronique dans la même semaine — je termine un bloc complet avant de changer de sujet, révision comprise.
-
-- **Comprendre avant de coder.** Je préfère saisir le "pourquoi" d'un algorithme ou d'une formule avant de l'implémenter, plutôt que de le faire tourner sans le comprendre.
-
-- **Pas de raccourcis.** Un exercice résolu avec de l'aide extérieure sans être compris ne compte pas comme acquis — je préfère être bloqué plus longtemps mais m'en sortir réellement seul.
-
-- **Révision systématique.** Chaque gros bloc terminé est suivi d'une révision complète avant de passer au suivant, pour que ça reste acquis sur la durée.
-
-- **Un langage avant le suivant.** Je pousse chaque langage jusqu'à un niveau solide, pas juste "je l'ai survolé", avant de passer au suivant de la liste.
-
-<br><br>
+- Python 3.8 or newer
+- No external dependencies (standard library only: `re`)
 
 ---
 
-<br>
+## Running the REPL
 
-## 💻 Technique
+```bash
+python mal.py
+```
 
-<br>
+You get a prompt:
 
-### 🛠️ Stack technique
+```
+user> (+ 1 2 3)
+6
+user> (* 2 (+ 3 4))
+14
+user> 
+```
 
-<br>
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-</div>
-
-<br><br>
-
-### 📊 Statistiques GitHub
-
-<br>
-
-<div align="center">
-
-![Streak](https://streak-stats.demolab.com/?user=jocravidd-droid&hide_border=true)
-
-</div>
-
-<br><br>
+Press `Ctrl+D` to quit (the program prints `EXIT` and stops).
 
 ---
 
-<br>
+## Syntax supported
 
-## 🌱 Ma philosophie
+### Atoms
 
-<br>
+| Input | Result |
+|-------|--------|
+| `42` | integer `42` |
+| `-7` | integer `-7` |
+| `3.5` | float `3.5` |
+| `hello` | the symbol `hello` — its value if defined, otherwise the symbol itself |
 
-> *Prendre le temps de bien faire les choses. Mieux vaut des bases solides qu'un apprentissage précipité !*
+### Calls
+
+An expression is a parenthesized list whose first element is an operator and whose remaining elements are the arguments:
+
+```
+(operator arg1 arg2 ...)
+```
+
+Arguments may themselves be lists — nesting is evaluated inside-out.
+
+```
+user> (- 20 5 3)
+12
+user> (/ 100 2 5)
+10.0
+user> (* 2 (- 10 4) 3)
+36
+```
+
+---
+
+## Built-in operators
+
+All operators are variadic: they fold over the argument list from left to right.
+
+| Operator | Function called | Behaviour |
+|----------|-----------------|-----------|
+| `+` | `sum` | Sum of all arguments |
+| `-` | `tools.subtraction_function` | First argument minus each of the following |
+| `*` | `tools.multiplication_function` | Product of all arguments |
+| `/` | `tools.division_function` | First argument divided by each of the following |
+| `<` | `tools.smallest` | Smallest value in the list |
+| `>` | `tools.largest` | Largest value in the list |
+| `<=` | `tools.less_or_equal` | Last value that is `<=` the running value |
+| `>=` | `tools.greater_or_equal` | Last value that is `>=` the running value |
+
+Division by zero does not crash — it returns the string `a division by zero is impossible`.
+
+An unknown operator returns the string `Unknown Operator`.
+
+---
+
+## Special forms
+
+### `def!` — define a global variable
+
+```
+(def! name value)
+```
+
+Stores `value` in the global `environment` dictionary and returns it.
+
+```
+user> (def! a 6)
+6
+user> (+ a 4)
+10
+user> (def! b (* a 2))
+12
+user> (+ a b)
+18
+```
+
+The value may be a nested expression; it is evaluated before being stored.
+
+### `let*` — define local bindings
+
+```
+(let* (name1 value1 name2 value2 ...) body)
+```
+
+Creates a copy of the current environment, adds the bindings to that copy, evaluates `body` inside it, and returns the result. The bindings are **not** visible after the `let*` ends.
+
+```
+user> (let* (c 2) c)
+2
+user> (let* (c 2 d (* c 3)) (+ c d))
+8
+```
+
+Bindings are read as a flat list of pairs — `(c 2 d 3)`, not `((c 2) (d 3))`.
+
+---
+
+## How it works
+
+```
+input string
+    |
+ tokenize()      splits on parentheses and whitespace -> list of tokens
+    |
+ read_form()     builds the nested list, converts numeric tokens to int/float
+    |
+ READ()          entry point; validates the outer parentheses
+    |
+ EVAL()          resolves symbols, applies special forms, calls the operator
+    |
+ PRINT()         returns the value
+    |
+  print
+```
+
+### `tokenize(string)`
+
+Uses the regex `[()]|[^\s()]+`: every parenthesis becomes its own token, and any run of non-space, non-parenthesis characters becomes one token.
+
+```python
+tokenize("(+ 1 (* 2 3))")
+# ['(', '+', '1', '(', '*', '2', '3', ')', ')']
+```
+
+### `read_form(tokens)`
+
+Walks the token list and returns `(nested_list, tokens_consumed)`.
+
+- `(` at position 0 is the opening of the current list and is simply skipped.
+- `(` anywhere else starts a sub-list: the function calls itself on the remaining tokens and appends the result.
+- `)` closes the current list and returns.
+- Anything else is converted to `int`, then `float`, and left as a string if both fail.
+
+The second return value (`tokens_consumed`) is what lets the caller jump past the sub-list it just parsed.
+
+### `READ(info)`
+
+Tokenizes, then dispatches on the first and last character of the raw input:
+
+- starts with `(` and ends with `)` -> parse as a list
+- neither -> parse as a single atom
+- only one of the two -> raise `ParenthesisError`
+
+### `EVAL(expr, env=environment)`
+
+- Not a list -> looked up in `env`, then in the global `environment`; returned as-is if absent.
+- Empty list -> `IndexError('NO CONTENT')`.
+- First element `let*` -> local-binding branch described above.
+- First element `def!` -> definition branch, writes to the global `environment`.
+- Anything else -> evaluate each argument (recursively for sub-lists), look the operator up in `stock`, and call it with the argument list.
+
+### `PRINT(info)` and `rep(info)`
+
+`PRINT` currently returns its input unchanged — it is the hook where a proper Lisp-style printer would go. `rep` chains the three stages and prints the result.
+
+---
+
+## Errors
+
+| Situation | Behaviour |
+|-----------|-----------|
+| Unbalanced outer parentheses | raises `ParenthesisError` |
+| Empty list `()` | raises `IndexError: NO CONTENT` |
+| Unknown operator | returns `"Unknown Operator"` |
+| Division by zero | returns `"a division by zero is impossible"` |
+| `Ctrl+D` | prints `EXIT`, exits the loop |
+
+`ParenthesisError` is a custom exception with the default message `No parenthesis or unclosed parenthesis`.
+
+---
+
+## Known limitations
+
+These are current behaviours of the code, worth knowing before extending it:
+
+1. **Comparison operators return numbers, not booleans.** `(< 8 3 12)` returns `3`, the smallest value — not `True`/`False`. A real Lisp would return a boolean.
+2. **`=` is not wired up.** `tools.equal` exists but is missing from the `stock` dictionary, so `(= 1 1)` returns `"Unknown Operator"`.
+3. **Empty input crashes.** Pressing Enter on a blank line makes `READ` index `info[0]` on an empty string and raise `IndexError`.
+4. **Parenthesis checking is shallow.** Only the first and last character are inspected, so `(+ 1 (* 2 3)` is not caught by `ParenthesisError`.
+5. **`def!` with several names in one call is unreliable** — the index used to write into `environment` is the position in the full argument list, not in the list of names.
+6. **No user-defined functions.** There is no `fn*` form yet, so the operator set is fixed to the contents of `stock`.
+7. **No string type.** Anything that is not numeric is treated as a symbol.
+
+---
+
+## Extending it
+
+To add an operator:
+
+1. Write the function in `tools.py`. It must take a single argument: the list of already-evaluated arguments.
+2. Register it in `stock` in `mal.py` under the symbol you want.
+
+```python
+# tools.py
+def modulo_function(cal):
+    start = cal[0]
+    for number in cal[1:]:
+        start = start % number
+    return start
+```
+
+```python
+# mal.py
+stock = {
+    ...
+    '%': tools.modulo_function,
+}
+```
+
+No change to `EVAL` is needed — it looks operators up in `stock` by name.
