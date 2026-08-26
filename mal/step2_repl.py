@@ -2,54 +2,67 @@
 
 import re
 
-import outils # MODULE contenant les fonctions de base pour les opérations arithmétiques et logiques
+import tools  # MODULE containing the base functions for arithmetic and logical operations
 
-environnement = {}
-stock = {'+': lambda cal: sum(cal), '*': outils.fonction_multiplication, '/': outils.fonction_division, '-': outils.fonction_soustraction, '<': outils.plus_petit, '>': outils.plus_grand, '>=': outils.superieur_egal, '<=': outils.inferieur_egal} # dictionnaire contenant les opérateurs et les fonctions associées
+environment = {}
+stock = {
+    '+': lambda cal: sum(cal),
+    '*': tools.multiplication_function,
+    '/': tools.division_function,
+    '-': tools.subtraction_function,
+    '<': tools.smallest,
+    '>': tools.largest,
+    '>=': tools.greater_or_equal,
+    '<=': tools.less_or_equal,
+}  # dictionary containing the operators and their associated functions
 
-class ParentheseError(Exception): # erreur levée lorsqu'il y a un problème de parenthèses
-    def __init__(self, message = "Aucune Paranthese ou Paranthese Ouvert"):
+
+class ParenthesisError(Exception):  # error raised when there is a parenthesis problem
+    def __init__(self, message="No parenthesis or unclosed parenthesis"):
         super().__init__(message)
 
-def tokenize(chaine): # tokenize l'expression en list (passe de str a list)
-    result = re.findall(r"[()]|[^\s()]+", chaine)
+
+def tokenize(string):  # tokenizes the expression into a list (str -> list)
+    result = re.findall(r"[()]|[^\s()]+", string)
     return result
 
-def read_form(tokens): # gere les embriquation
 
-    mappage = []
+def read_form(tokens):  # handles nesting
+
+    mapping = []
 
     index = 0
     while index < len(tokens):
         if tokens[index] == ')':
             index += 1
-            return mappage, index
+            return mapping, index
         elif tokens[index] == '(':
             if index == 0:
                 index += 1
             else:
-                sous_liste, tokens_lus = read_form(tokens[index:])
-                mappage.append(sous_liste)
-                index += tokens_lus
+                sub_list, tokens_read = read_form(tokens[index:])
+                mapping.append(sub_list)
+                index += tokens_read
         else:
-            if tokens[index].isdigit() or tokens[index].lstrip('-').isdigit():  
-                mappage.append(int(tokens[index]))
+            if tokens[index].isdigit() or tokens[index].lstrip('-').isdigit():
+                mapping.append(int(tokens[index]))
                 index += 1
             else:
                 try:
-                    mappage.append(float(tokens[index]))
+                    mapping.append(float(tokens[index]))
                     index += 1
                 except ValueError:
-                    mappage.append(tokens[index])
+                    mapping.append(tokens[index])
                     index += 1
-    
-    return mappage, index
 
-def READ(info): # lance le processus de lecture et de tokenisation, puis retourne la liste finale
-    contenu = tokenize(info)
+    return mapping, index
+
+
+def READ(info):  # starts the reading and tokenizing process, then returns the final list
+    content = tokenize(info)
     if info[0] == '(' and info[-1] == ')':
-        liste, _token = read_form(contenu)
-        return liste
+        parsed_list, _token = read_form(content)
+        return parsed_list
     if info[0] != '(' and info[-1] != ')':
         if info.isdigit() or info.lstrip('-').isdigit():
             return int(info)
@@ -59,39 +72,38 @@ def READ(info): # lance le processus de lecture et de tokenisation, puis retourn
             except ValueError:
                 return info
     elif (info[0] == '(' and info[-1] != ')') or (info[0] != '(' and info[-1] == ')'):
-        raise ParentheseError
-    
-        
-def EVAL(expr, env = environnement): # evaluer l'expression en fonction de l'environnement
-    if not isinstance(expr, list): # si l'expression n'est pas une liste, on retourne la valeur de la variable dans l'environnement
+        raise ParenthesisError
+
+
+def EVAL(expr, env=environment):  # evaluates the expression using the environment
+    if not isinstance(expr, list):  # if the expression is not a list, return the variable's value from the environment
         if expr in env:
             return env[expr]
-        elif expr in environnement:
-            return environnement[expr]
+        elif expr in environment:
+            return environment[expr]
         else:
             return expr
-    if len(expr)== 0: # si l'expression est vide, on retourne une erreur
-        raise IndexError('AUCUN CONTENU')
+    if len(expr) == 0:  # if the expression is empty, raise an error
+        raise IndexError('NO CONTENT')
     else:
-        if expr[0] == 'let*': # si l'expression est un let*, on crée un environnement local pour stocker les variables
-            env_local = {cle: env[cle] for cle in env} # on copie l'environnement global dans l'environnement local
+        if expr[0] == 'let*':  # if the expression is a let*, create a local environment to store the variables
+            local_env = {key: env[key] for key in env}  # copy the global environment into the local one
             index = 0
             while index < len(expr[1]):
                 if isinstance(expr[1][index], str):
-                    env_local[expr[1][index]] = EVAL(expr[1][index + 1], env_local)
+                    local_env[expr[1][index]] = EVAL(expr[1][index + 1], local_env)
                     index += 1
                 else:
                     index += 1
-            operateur = EVAL(expr[2], env_local)
+            operator = EVAL(expr[2], local_env)
 
             try:
-                return operateur
+                return operator
             except KeyError:
-                return "Operateur Inconnu"
-                    
-                
-        if expr[0] != 'def!': # si l'expression n'est pas une définition, on évalue l'opérateur et les arguments
-            operateur = expr[0]
+                return "Unknown Operator"
+
+        if expr[0] != 'def!':  # if the expression is not a definition, evaluate the operator and the arguments
+            operator = expr[0]
             arguments = []
 
             for argument in expr[1:]:
@@ -103,46 +115,49 @@ def EVAL(expr, env = environnement): # evaluer l'expression en fonction de l'env
                 else:
                     arguments.append(argument)
             try:
-                calcul = stock[operateur]
-                result = calcul(arguments)
+                computation = stock[operator]
+                result = computation(arguments)
                 return result
             except KeyError:
-                return "Operateur Inconnu"
-        else: # si l'expression est une définition, on stocke la variable dans l'environnement
+                return "Unknown Operator"
+        else:  # if the expression is a definition, store the variable in the environment
 
-            somme = []
+            total = []
 
-            for verif in expr[1:]:
-                if isinstance(verif, list):
-                    result = EVAL(verif, environnement)
-                    somme.append(result)
+            for check in expr[1:]:
+                if isinstance(check, list):
+                    result = EVAL(check, environment)
+                    total.append(result)
                 else:
-                    somme.append(verif)
+                    total.append(check)
 
-            lettre = []
+            letters = []
 
-            for index, correction in enumerate(somme):
+            for index, correction in enumerate(total):
                 if isinstance(correction, str):
-                    lettre.append(correction)
-                    if isinstance(somme[index + 1], (int, float)):
-                        environnement[lettre[index]] = somme[index + 1]
+                    letters.append(correction)
+                    if isinstance(total[index + 1], (int, float)):
+                        environment[letters[index]] = total[index + 1]
 
-            return environnement[expr[1]]
-        
-def PRINT(info): # retourne l'information sous forme de string
+            return environment[expr[1]]
+
+
+def PRINT(info):  # returns the information as a string
     return info
 
-def rep(info): # LANCE LE PROCESSUS DE LECTURE, EVALUATION ET AFFICHAGE
+
+def rep(info):  # RUNS THE READ, EVAL AND PRINT PROCESS
     a = READ(info)
     b = EVAL(a)
     c = PRINT(b)
     print(c)
 
+
 if __name__ == '__main__':
     while True:
         try:
-            cmd = input('user> ') # demande à l'utilisateur de saisir une expression
+            cmd = input('user> ')  # asks the user to type an expression
             rep(cmd)
-        except EOFError: # si l'utilisateur fait un ctrl+D, on quitte le programme
+        except EOFError:  # if the user hits ctrl+D, quit the program
             print('EXIT')
             break
