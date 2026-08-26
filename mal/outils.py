@@ -1,74 +1,76 @@
-def fonction_multiplication(cal):
-    debut = cal[0]
+def multiplication_function(cal):
+    start = cal[0]
     for number in cal[1:]:
-        debut = debut * number
-    return debut
+        start = start * number
+    return start
 
-def fonction_division(cal):
-    debut = cal[0]
+
+def division_function(cal):
+    start = cal[0]
     try:
         for number in cal[1:]:
-            debut = debut / number
+            start = start / number
     except ZeroDivisionError:
-        return 'une division par zéro et impossible'
-    return debut
+        return 'a division by zero is impossible'
+    return start
 
-def fonction_soustraction(cal):
-    debut = cal[0]
-    for number in cal[1:]:
-        debut = debut - number
-    return debut
 
-def plus_petit(cal):
-    debut = cal[0]
+def subtraction_function(cal):
+    start = cal[0]
     for number in cal[1:]:
-        debut = min(debut, number)
-    return debut
+        start = start - number
+    return start
 
-def plus_grand(cal):
-    debut = cal[0]
-    for number in cal[1:]:
-        debut = max(debut, number)
-    return debut
 
-def superieur_egal(cal):
-    debut = cal[0]
+def smallest(cal):
+    start = cal[0]
     for number in cal[1:]:
-        if number >= debut:  # noqa: PLR1730
-            debut = number
-    return debut
+        start = min(start, number)
+    return start
 
-def inferieur_egal(cal):
-    debut = cal[0]
-    for number in cal[1:]:
-        if number <= debut:  # noqa: PLR1730
-            debut = number
-    return debut
 
-def egal(cal):
-    boite = True
-    debut = cal[0]
+def largest(cal):
+    start = cal[0]
     for number in cal[1:]:
-        if number != debut:
-            boite = False
+        start = max(start, number)
+    return start
+
+
+def greater_or_equal(cal):
+    start = cal[0]
+    for number in cal[1:]:
+        if number >= start:  # noqa: PLR1730
+            start = number
+    return start
+
+
+def less_or_equal(cal):
+    start = cal[0]
+    for number in cal[1:]:
+        if number <= start:  # noqa: PLR1730
+            start = number
+    return start
+
+
+def equal(cal):
+    box = True
+    start = cal[0]
+    for number in cal[1:]:
+        if number != start:
+            box = False
         else:
             continue
-    return boite
+    return box
 
 
 if __name__ == '__main__':
-
-    x = fonction_multiplication([2, 4, 5])
+    x = multiplication_function([2, 4, 5])
     print(x)
-
-    x = fonction_division([100, 2, 5])
+    x = division_function([100, 2, 5])
     print(x)
-
-    x = fonction_soustraction([20, 5, 3])
+    x = subtraction_function([20, 5, 3])
     print(x)
-
-    x = plus_petit([8, 3, 12, 1])
+    x = smallest([8, 3, 12, 1])
     print(x)
-
-    x = plus_grand([8, 3, 12, 1])
+    x = largest([8, 3, 12, 1])
     print(x)
